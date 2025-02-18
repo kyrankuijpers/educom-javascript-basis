@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educom JS Module</title>
+</head>
+<body> 
+    <script>
+        const hour = 10;
+        let msg = "";
+
+        switch(hour){
+            case 10: {
+                msg = "its 10";
+                break;
+            }
+            case 11: {
+                msg = "its 11";
+                break;
+            }
+            case 12: {
+                msg = "its noon";
+                break;
+            }
+            default: {
+                msg = "clock is off";
+                break;
+            }
+        }
+
+        console.log(`Message: ${msg}`);
+    </script>
+</body>
+</html>

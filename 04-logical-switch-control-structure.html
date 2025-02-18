@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educom JS Module</title>
+</head>
+<body> 
+    <script>
+  
+        const choice = 2;
+        let msg = "";
+
+        // Note to self: since expressions like choice < 1 are evaluated first, the switch 'true' is matched with whichever case's expression first evaluates to 'true' //
+        switch(true){
+            case (choice < 1): {
+                msg = "make coffee";
+                break;
+            }
+            case (choice > 2): {
+                msg = "tea";
+                break;
+            }
+            default: {
+                msg = "water";
+                break;
+            }
+        }
+
+        console.log(`Message: ${msg}`);
+    </script>
+</body>
+</html>
