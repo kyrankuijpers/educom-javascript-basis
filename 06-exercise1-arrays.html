@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educom JS Module</title>
+</head>
+<body>
+    <script>
+         
+        let shoppingCart = [2.99, 15.00, 0.89, 3.45, 2.30, 1.00, 0.99];
+        let total = 0;
+        let tax = 0;
+        const taxpc = 0.21;
+
+        function sum(value){
+            total = total + value;
+        }
+
+        shoppingCart.forEach(sum);
+        totalIncl = total + (total * taxpc);
+
+
+        console.log(total, totalIncl); 
+
+        // now shorter
+        let total2 = 0;
+
+        shoppingCart.forEach(value => total2 += value);
+        console.log(total2);
+
+    </script>
+</body>
+</html>
