@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educom JS Module</title>
+</head>
+<body>
+    <script>
+
+        const shoppingCart = [
+            {id: 1, name: "php book", price: 20.00},
+            {id: 2, name: "sql book", price: 15.25},
+            {id: 3, name: "javascript book", price: 49.99}
+        ];
+
+        let total = 0;
+        shoppingCart.forEach((item) => {
+            total += item.price;
+        });
+
+        // A nice illustration of unexpected floating point arithmetic results ;)
+        console.log(total);
+
+    </script>
+</body>
+</html>
