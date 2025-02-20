@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educom JS Module</title>
+</head>
+<body>
+    <script>
+        let txt = "";
+        const beatles = ["Ringo Deathstarr", "Paulina", "Georgina", "here's Johnny!"];
+
+        const inLoop = (value, index, array) => {
+            txt += " " + value.toUpperCase();
+        }
+
+        beatles.forEach(inLoop);
+        console.log(txt);
+
+        let txt2 = "";
+        beatles.forEach((value, index, array) => {
+            let upper = value.toUpperCase();
+            txt2 += `${upper} - `;
+        });
+        console.log(txt2);
+
+    </script>
+</body>
+</html>

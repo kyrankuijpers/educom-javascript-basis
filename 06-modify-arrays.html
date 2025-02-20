@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educom JS Module</title>
+</head>
+<body>
+    <script>
+        // bovenste optie geeft op [2] al meteen George omdat JS asynchroon is, dus voordat de console logt is het array al veranderd.
+        const beatles = ["Ringo", "Paul", "whatshisface", "John"];
+        console.log({before: beatles});
+        beatles[2] = "George";
+        console.log({after: beatles});       
+        
+        // onderste optie geeft op [2] bij de eerste log nog niet George (zoals je verwacht) omdat de console logt de 1e keer voordat array is aangepast.
+        const beatles1 = ["Ringo", "Paul", "whatshisface", "John"];
+        console.log(beatles1);
+        beatles1[2] = "George";
+        console.log(beatles1);   
+    </script>
+</body>
+</html>
